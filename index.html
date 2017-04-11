@@ -1,39 +1,33 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
 
-    <style type="text/css">
-        html{height:100%}
-        body{height:100%;margin:0px;padding:0px}
-        #allmap{width:40%;height:40%;position:relative;margin-bottom: 30px;left: 5%; float:left; display: inline;}
-    </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" charset="utf-8">
+	<base target="_blank">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-	<meta charset="utf-8">
-	<title>Modest</title>
-	<!-- Main Stylesheet -->
+	<title>Yuke Wang</title>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="stylesheet" type="text/css" href="css/Superlink/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/Superlink/component.css">
+	<style type="text/css">
+        #allmap{width:40%;height:40%;position:relative;margin-bottom: 30px;left: 5%; float:left; display: inline;}
+	    .projects{
+			background-color: #c7dec6;
+			border: 1px solid #000;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			margin-top:10%;
+			padding:20px;
+		}
+	</style>
 
-	<!-- jQuery -->
 	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-
-	<script>window.twttr = (function(d, s, id) {
-	    var js, fjs = d.getElementsByTagName(s)[0],
-			t = window.twttr || {};
-	    if (d.getElementById(id)) return t;
-	    js = d.createElement(s);
-	    js.id = id;
-	    js.src = "https://platform.twitter.com/widgets.js";
-	    fjs.parentNode.insertBefore(js, fjs);
-	    t._e = [];
-	    t.ready = function(f) {
-	        t._e.push(f);
-	    };
-	    return t;
-	}(document, "script", "twitter-wjs"));</script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
 
 </head>
 <body>
@@ -52,9 +46,8 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a class="link-service" href="#services">Education</a></li>
-						<li><a class="link-facts" href="#facts">Projects</a></li>
-						<li><a class="link-portfolio" href="#portfolio">Publication</a></li>
-						<li><a class="link-clients" href="#clients">HONORS & AWARDS</a></li>
+						<li><a class="link-portfolio" href="#portfolio">Projects</a></li>
+						<li><a class="link-clients" href="#clients">Honors & Awards</a></li>
 						<li><a class="link-contact" href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -74,20 +67,38 @@
 		<div class="col-md-4 text-center">
 			<img src="img/Bio.png" class="img-responsive animated fadeInLeft" alt="Time is happiness">
 		</div>
-		<div class="col-md-8 text-center welcome-section">
+
+		<div class="col-md-8 text-center welcome-section" >
+			<section class="link-braces">
+			<p class="animated fadeInRight" style="font-family:Georgia;font-size: 16px;text-align:justify;line-height:25px">
+			<br/>
+				I am currently a junior undergraduate student in
+				School of Information and Software Engineering
+				at the University of Electronic Science and Technology of China
+				<a href="#"  style="text-decoration: none;color: #46b8da" data-dummy="UESTC">(UESTC)</a>.
+			    I am working closely with Prof.Yu Tang and Prof Di Lin.
+				I am a member of the International Elite Class
+				<a href="#"  style="text-decoration: none;color: #46b8da"  data-dummy="IEC">(IEC)</a>
+				, and a team member at Modern Service Computing Lab at UESTC as well.
+				<br/>
+				<br/>
+				My main research interests linclude but are not limited to Machine Learning
+				and Data Analytics, optimization methods and statistical learning modes for
+				the Medical Data Processing. I am also interested in machine learning theory and
+				its applications in the related areas, such as natural language processing, computer vision.
+			</p>
+			</section>
 			<br>
-			<p class="animated fadeInRight" style="font-family:Georgia;font-size: 15px;text-align:justify;line-height:25px">
-			<br/>1. Current undergraduate average GPA 3.93/4.00, the average score 89.43/100, ranking TOP 5%.
-			<br/>2. Excellent oral and written English, TOEFL 98, GRE V 152+ Q 170 + AW 3.5.
-			<br/>3.	Familiar with C, JAVA, Python programming, has the use of JAVA and Python for Web server-side development of practical experience projects, including JSP, Tornado.
-			<br/>4.	Familiar with the site front-end development, including the use of HTML + CSS, Javascript, and Jquery.
-			<br/>5. Familiar with the data mining techniques and methods, and have already taken part in and successfully complete several projects related to data analysis.</p>
-			<br>
-			<a href="files/CV.pdf" download="CV" class="button-grey animated fadeInUp">Learn More From my CV</a>
+			<section class="link-flip">
+			<a href="files/CV.pdf" style="color: #c55050;text-decoration: none" target = "_blank" class="button-grey animated fadeInUp">
+				Learn More From my CV
+			</a>
+			</section>
 		</div>
 	</div>
   </div>
 </div>
+
 	<!-- SERVICES -->
 	<div class="fluid-container">
 		<div class="section-services" id="services">
@@ -112,86 +123,60 @@
 
 				</div>
 				<a class="twitter-timeline" height ="450px" style=" position:absolute;right:0;display: inline;" href="https://twitter.com/search?q=National%20Parks" data-widget-id="844890252762234880">
-							Tweets about National Parks
+					Tweets about National Parks
 				</a>
 			</div>
 		</div>
 	</div>
 
-	<!-- FUN FACTS -->
-	<div class="fluid-container animated flipInX" id="facts">
-		<div class="row">
-			<div class="col-md-12 text-right">
-				<div class="section-header facts-header">
-					<h3>Some interesting facts</h3>
-				</div>
-			</div>
-		</div>
-		<div class="section-facts">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3 text-center">
-					<div class="counter-item">
-						<div class="counter-inner">
-							<div class="counter-body">
-								<h2 class="start-count" data-count="6">0</h2>
-								<h6>Projects Completed</h6>
-								<div class="end-count"></div>
-							</div>
-						</div>
-					</div>
-				</div> <!-- .counter-item -->
-
-				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3 text-center">
-					<div class="counter-item">
-						<div class="counter-inner">
-							<div class="counter-body">
-								<h2 class="start-count" data-count="20">0</h2>
-								<h6>Members in my Class at UESTC</h6>
-								<div class="end-count"></div>
-							</div>				
-						</div>
-					</div>
-				</div> <!-- .counter-item -->
-
-				<div class="col-md-3 col-sm-6 col-xs-12 col-lg-3 text-center">
-					<div class="counter-item">
-						<div class="counter-inner">
-							<div class="counter-body">
-								<h2 class="start-count" data-count="3">0</h2>
-								<h6>Honors ＆ Awards </h6>
-								<div class="end-count"></div>
-							</div>				
-						</div>
-					</div>
-				</div> <!-- .counter-item -->
-
-			</div>
-		</div>
-	</div>
-	
 	<!-- PORTFOLIO -->
 	<div class="fluid-container" id="portfolio">
 		<div class="row">
 			<div class="col-md-12 text-left">
 				<div class="section-header portfolio-header">
-					<h3>My Project Experience </h3>
+					<h3>My Project Experience</h3>
 				</div>
 			</div>
 		</div>
 
-		<div class="section-portfolio" >
+		<div class="section-portfolio">
 			<div class="row portfolio-holder">
-				<article class="portfolio col-md-4 col-sm-6 col-xs-12">
-					<div class="entry-thumbnail">
+
+			<div class = "projects" style="height: 450px">
+
+				<article class="portfolio col-md-4 col-sm-6 col-xs-12" style="margin-top: 5%;margin-right: 2%">
+					<div class="entry-thumbnail" >
 						<img src="img/portfolio/1.jpg" alt="">
 					</div>
+
 					<div class="portfolio-overlay first">
 						<a href="#"><h4 class="entry-title">
 							Analysis of Outpatient Hospitalization Expenses
 						</h4></a>
 					</div>
 				</article>
-				<article class="portfolio col-md-4 col-sm-6 col-xs-12">
+
+				<section class="link-scaleup" style="margin-top: 0%">
+					<p>
+						&#10148 The project aims at using the real data from the hospital’s patients database, including both
+							static data (Gender, Age) and the dynamic data (Outpatient & hospital costs, Medical Expenditure
+							Reimbursement Proportion) to forecast the rational range of reimbursed medical expenses, also check
+							the validation of the real medical expenses reimbursed by the patient.<br/>
+						&#10148 The beginning stage includes the medical data cleansing, which involves stripping out the dirty
+							data, achieving data masking, checking the data consistency comparing to the real business logic
+							and environment.<br/>
+						&#10148 During the middle of the project, we choosing the forecasting variables through using the
+							logistic regression, line regression, AdaBoost classification, and Naive Bayes classifier, after
+							that find the mostly business related and useful variables.<br/>
+						&#10148 After choosing the variables, we apply the several statistical metrics such as WOE(weight of
+							evidence) and IV(Information Value) to measure the contribution of each variable to forecasting
+							results.
+					</p>
+					</section>
+			</div>
+
+			<div class = "projects">
+				<article class="portfolio col-md-4 col-sm-6 col-xs-12" style="margin-right: 2%">
 					<div class="entry-thumbnail">
 						<img src="img/portfolio/2.jpg" alt="">
 					</div>
@@ -201,17 +186,38 @@
 						</h4></a>
 					</div>
 				</article>
-				<article class="portfolio col-md-4 col-sm-6 col-xs-12">
+                <section class="link-scaleup">
+					<p>
+					&#10148 Using Python for big data analysis projects, including data cleaning, sorting and visualization technology, as well as utilizing Python, Pandas, Matplotlib, Numpy libraries.<br/>
+					&#10148 It has completed heat map for geographical distribution of the registered users, and web traffic monitoring by using website log.<br/>
+					&#10148 Using Baidu Maps Geocoding API to obtain the corresponding location (Latitude and Longitude)<br/>
+					</p>
+				</section>
+			</div>
+
+			<div class = "projects">
+				<article class="portfolio col-md-4 col-sm-6 col-xs-12" style="margin-right: 2%">
 					<div class="entry-thumbnail">
 						<img src="img/portfolio/3.jpg" alt="">
 					</div>
+					
 					<div class="portfolio-overlay third">
 						<a href="#"><h4 class="entry-title">
 							Python Web Development for Online Shopping Website
 						</h4></a>
 					</div>
 				</article>
-				<article class="portfolio col-md-4 col-sm-6 col-xs-12">
+				<section class="link-scaleup">
+					<p>
+					&#10148 Mobile Mall Web project using Python Tornado asynchronous framework for website back end server program.<br/>
+					&#10148 Online shopping website using Python toolkit Whoosh to implement search engine development.<br/>
+					&#10148 The completion of the shopping site businesses include user registration, business certification, business merchandise entry,add goods to shopping carts, online paying.<br/>
+					</p>
+					</section>
+			</div>
+				
+			<div class = "projects">
+				<article class="portfolio col-md-4 col-sm-6 col-xs-12" style="margin-right: 2%">
 					<div class="entry-thumbnail">
 						<img src="img/portfolio/4.jpg" alt="">
 					</div>
@@ -221,17 +227,35 @@
 						</h4></a>
 					</div>
 				</article>
-				<article class="portfolio col-md-4 col-sm-6 col-xs-12">
+				<section class="link-scaleup">
+					<p>
+					&#10148 Use Java JSP technology to complete the development web pages of online bookstore management<br/>
+					&#10148 Back-end database using Oracle 12c, and connected by JDBC.<br/>
+					&#10148 The Web Site completed bookstore book purchasing, sales, inquiries and other business logic.<br/>
+					</p>
+				</section>
+			</div>
+				
+			<div class = "projects">
+				<article class="portfolio col-md-4 col-sm-6 col-xs-12" style="margin-right: 2%">
 					<div class="entry-thumbnail">
 						<img src="img/portfolio/6.jpg" alt="">
 					</div>
 					<div class="portfolio-overlay sixth">
-						<a href="#"><h4 class="entry-title">DELICIOUS ONE</h4></a>
+						<a href="#"><h4 class="entry-title">Development of front page of Blog Website</h4></a>
 					</div>
 				</article>
+				<section class="link-scaleup">
+					<p>
+					&#10148 The back end of the project site using Python Django framework,
+						I am responsible for front-end page development including HTML file
+						with embedded Python Django statement.<br/>
+					</p>
+				</section>
+			</div>
 			</div>
 		</div>
-	</div>
+</div>
 
 	<!-- CLIENTS -->
 	<div class="fluid-container" id="clients">
@@ -250,14 +274,26 @@
 					</div>
 					<ul class="client-slide" style="font-size: 20px;font-family: Georgia">
 						<li>
+							<section class="link-braces">
 							<p>The First Prize Scholarship.(Top 5%) </p>
 							<h4>Sept. 2015</h4>
 							<br/>
 							<p>Enterprise Scholarship.(Top 5%) </p>
 							<h4>Dec. 2016</h4>
 							<br/>
-							<p>International Software Testing Qualifications Board.(Certified Tester) (Foundation Level) </p>
+							<p>International Software Testing Qualifications Board.(Certified Tester)
+								<a style="color:yellow;text-decoration:none" href="http://www.istqb.org/" data-dummy="ISTQB">(ISTQB)</a>.
+								<br/>
+								(Foundation Level)
+								<a href="files/ISTQB.pdf" style="color: cyan;text-decoration: none" target = "_blank">View</a>
+							</p>
 							<h4>Dec. 2016</h4>
+							<p>[Honorable Mention] Interdisciplinary Contest In Modeling
+							<a style="color:yellow;text-decoration:none" href="https://www.comap.com/undergraduate/contests/mcm/" data-dummy="ICM">(ICM)</a>.
+							<a href="files/ICM.pdf" style="color: cyan;text-decoration: none" target = "_blank">View</a>
+							</p>
+							<h4>April. 2016</h4>
+							</section>
 						</li>
 					</ul>
 				</div>
@@ -301,6 +337,7 @@
 						</fieldset>
 					</form>
 				</div>
+
 				<div class="col-md-7 col-sm-12 col-xs-12">
 					<div class="contact-map">
 						<div id="allmap" style="left:30px;margin-top:75px;position:absolute;width:600px;height:380px;z-index:50;"></div>
@@ -338,14 +375,32 @@
 			</div>
 		</footer>
 	</div>
-	</div>
+	
+</div>
 
-	<!-- Plugins -->
-	<script src="js/bootstrap.js"></script>
-	<script src="js/custom.js"></script>
-
+	<a title="web analytics" href="http://statcounter.com/" target="_blank">
+	    <img src="//c.statcounter.com/11294384/0/9d025de1/0/" alt="web analytics" style="border:none;">
+	</a>
 </body>
 </html>
+
+
+<!-- jQuery -->
+<script>window.twttr = (function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+	    if (d.getElementById(id)) return t;
+	    js = d.createElement(s);
+	    js.id = id;
+	    js.src = "https://platform.twitter.com/widgets.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	    t._e = [];
+	    t.ready = function(f) {
+	        t._e.push(f);
+	    };
+	    return t;
+	}(document, "script", "twitter-wjs"));
+</script>
 
 <script type="text/javascript">
 	//百度地图API功能
@@ -357,7 +412,7 @@
 	}
 	function init() {
 		var map = new BMap.Map("allmap");            // 创建Map实例
-		var point = new BMap.Point(116.404, 39.915); // 创建点坐标
+		var point = new BMap.Point(104.106953, 30.6815); // 创建点坐标
 		map.centerAndZoom(point,15);
 		var marker = new BMap.Marker(point);  // 创建标注
 		map.addOverlay(marker);               // 将标注添加到地图中
